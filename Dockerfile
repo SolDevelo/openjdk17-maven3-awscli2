@@ -7,7 +7,7 @@ RUN echo 'Acquire::Check-Valid-Until "false";' > /etc/apt/apt.conf.d/99no-check-
 
 # Unzip & curl
 RUN apt-get update
-RUN apt-get install -y unzip curl
+RUN apt-get install -y unzip curl git
 
 # Install AWS CLI
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
